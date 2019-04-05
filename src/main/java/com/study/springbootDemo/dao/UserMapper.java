@@ -2,8 +2,9 @@ package com.study.springbootDemo.dao;
 
 import com.study.springbootDemo.bean.User;
 import com.study.springbootDemo.bean.UserExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UserMapper {
     int countByExample(UserExample example);
@@ -29,4 +30,6 @@ public interface UserMapper {
     int updateByPrimaryKey(User record);
 
     User selectAll();
+
+    User selectUsername(String username);
 }

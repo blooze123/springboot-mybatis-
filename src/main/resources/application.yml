@@ -5,7 +5,6 @@ spring:
 
 #公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
 mybatis:
-  typeAliasesPackage: com.xdd.entity
   mapperLocations: classpath:mapper/*.xml
 
 ---
@@ -15,7 +14,7 @@ spring:
   profiles: dev
 
   datasource:
-    url: jdbc:mysql://localhost:3306/springboottest
+    url: jdbc:mysql://localhost:3306/first1
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
